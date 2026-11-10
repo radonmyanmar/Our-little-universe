@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8eee9">
+<title>Our Little Universe</title>
+<style>
+:root{--cream:#fbf5ef;--pink:#e8b9bd;--rose:#b86f7a;--ink:#392d30;--muted:#806d70}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+header{position:sticky;top:0;z-index:5;background:#fbf5efdf;backdrop-filter:blur(12px);border-bottom:1px solid #eadbd5}
+nav{max-width:1080px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{letter-spacing:.18em;font-size:12px;color:var(--rose);text-transform:uppercase}
+nav a{color:var(--muted);text-decoration:none;font:12px Arial,sans-serif;margin-left:18px}
+.hero{min-height:86vh;display:grid;place-items:center;text-align:center;padding:60px 20px;background:radial-gradient(circle at 50% 35%,#f2d9d6 0,#f8eee9 48%,#fbf5ef 76%)}
+.hero-inner{max-width:760px}.eyebrow{font:11px Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--rose)}
+h1{font-size:clamp(48px,10vw,100px);font-weight:400;line-height:.95;margin:22px 0;color:#573d43}
+.hero p{font-size:17px;color:var(--muted);line-height:1.8}.date{margin-top:30px;font:12px Arial,sans-serif;letter-spacing:.2em;color:var(--rose)}
+.heart{color:var(--rose);font-size:25px;margin:16px}
+section{max-width:1080px;margin:auto;padding:82px 22px}
+.section-head{text-align:center;margin-bottom:36px}.section-head small{font:10px Arial,sans-serif;letter-spacing:.25em;color:var(--rose);text-transform:uppercase}
+h2{font-size:clamp(32px,5vw,48px);font-weight:400;margin:12px 0}
+.intro{max-width:620px;margin:0 auto;text-align:center;color:var(--muted);line-height:1.9;font-size:16px}
+.counter{margin:35px auto 0;max-width:650px;padding:30px;border:1px solid #e7cfd0;background:#fff9f5;border-radius:18px;text-align:center}
+.counter strong{display:block;font-size:clamp(28px,6vw,48px);font-weight:400;color:var(--rose);margin:10px}
+.counter span{font:11px Arial,sans-serif;letter-spacing:.2em;color:var(--muted);text-transform:uppercase}
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.photo-grid figure{margin:0;background:#fff;border:8px solid #fff;box-shadow:0 12px 30px #68434a12;transform:rotate(-1deg)}
+.photo-grid figure:nth-child(2){transform:rotate(1.2deg);margin-top:28px}
+.photo-grid img{width:100%;height:390px;object-fit:cover;display:block}
+.photo-grid figcaption{text-align:center;padding:12px 5px 5px;color:var(--muted);font-style:italic;font-size:14px}
+.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.videos video{width:100%;max-height:560px;background:#211b1d;border-radius:14px;display:block}
+.video-card{background:#fff9f5;padding:12px;border:1px solid #eeded9;border-radius:16px}
+.video-card p{text-align:center;color:var(--muted);font-style:italic;margin:12px 0 3px}
+.letter{max-width:700px;margin:auto;background:#fffaf6;border:1px solid #ead6d2;padding:clamp(25px,6vw,55px);border-radius:4px;box-shadow:0 15px 40px #68434a0c}
+.letter p{font-size:17px;line-height:2;color:#705b60}
+.signature{color:var(--rose);font-style:italic;font-size:22px;margin-top:30px}
+footer{text-align:center;padding:35px 20px 50px;color:var(--muted);font-size:13px}
+@media(max-width:700px){nav{display:block;text-align:center}nav div:last-child{margin-top:12px}nav a{margin:0 8px}.photo-grid{grid-template-columns:1fr 1fr}.photo-grid img{height:270px}.photo-grid figure:last-child{grid-column:1/-1;width:72%;justify-self:center}.videos{grid-template-columns:1fr}section{padding:65px 18px}.hero{min-height:78vh}}
+</style>
+</head>
+<body>
+<header><nav><div class="brand">Our Little Universe</div><div><a href="#story">OUR STORY</a><a href="#photos">PHOTOS</a><a href="#videos">VIDEOS</a><a href="#letter">LETTER</a></div></nav></header>
+<main>
+<div class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">A little place made for two</div>
+  <h1>Our Little<br>Universe</h1>
+  <div class="heart">♡</div>
+  <p>Some moments become memories.<br>Some memories become our favourite place.</p>
+  <div class="date">03 AUGUST 2026</div>
+ </div>
+</div>
+<section id="story">
+ <div class="section-head"><small>Chapter one</small><h2>Our Story</h2></div>
+ <p class="intro">A little collection of the days, smiles, and moments that mean so much. This is our own corner of the universe — made from memories we never want to lose.</p>
+ <div class="counter"><span>Since our special day</span><strong id="days">—</strong><span id="counter-label">days together</span></div>
+</section>
+<section id="photos">
+ <div class="section-head"><small>Captured moments</small><h2>Our Memories</h2></div>
+ <div class="photo-grid">
+  <figure><img src="assets/1000004372.jpg" alt="A memory together"><figcaption>One of our little moments ♡</figcaption></figure>
+  <figure><img src="assets/1000004373.jpg" alt="A happy memory together"><figcaption>A moment to keep</figcaption></figure>
+  <figure><img src="assets/1000004370.jpg" alt="A photo together"><figcaption>Us, just as we are</figcaption></figure>
+ </div>
+</section>
+<section id="videos">
+ <div class="section-head"><small>Moving memories</small><h2>Little Moments in Motion</h2></div>
+ <div class="videos">
+  <div class="video-card"><video controls playsinline preload="metadata"><source src="assets/1000005108.mp4" type="video/mp4"></video><p>A memory in motion</p></div>
+  <div class="video-card"><video controls playsinline preload="metadata"><source src="assets/1000005109.mp4" type="video/mp4"></video><p>One more little moment</p></div>
+  <div class="video-card"><video controls playsinline preload="metadata"><source src="assets/1000005110.mp4" type="video/mp4"></video><p>Saved in our universe</p></div>
+  <div class="video-card"><video controls playsinline preload="metadata"><source src="assets/1000004705.mp4" type="video/mp4"></video><p>A day worth remembering</p></div>
+  <div class="video-card"><video controls playsinline preload="metadata"><source src="assets/1000005106.mp4" type="video/mp4"></video><p>And many more memories</p></div>
+ </div>
+</section>
+<section id="letter">
+ <div class="section-head"><small>A note for you</small><h2>To My Favourite Person</h2></div>
+ <div class="letter">
+  <p>Out of all the ordinary days, some become special just because we shared them. Thank you for every smile, every laugh, and every memory we've made.</p>
+  <p>I hope this little website reminds us to keep collecting beautiful moments, one day at a time.</p>
+  <div class="signature">Always, with love ♡</div>
+ </div>
+</section>
+</main>
+<footer>Made with love · Our Little Universe · 03.08.2026</footer>
+<script>
+const start = new Date(2026, 7, 3);
+const now = new Date();
+const days = Math.max(0, Math.floor((new Date(now.getFullYear(),now.getMonth(),now.getDate())-start)/86400000));
+document.getElementById('days').textContent = days;
+document.getElementById('counter-label').textContent = days === 1 ? 'day together' : 'days together';
+</script>
+</body></html>
